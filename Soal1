@@ -1,0 +1,82 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+package techtestSERA;
+
+/**
+ *
+ * @author VINCENT
+ */
+import java.util.Scanner;
+public class Soal1 {
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Masukkan nominalnya :");
+        double nom = input.nextDouble();
+        
+        int hitung = (int)(nom / 100000);
+        int sisa = (int)(nom % 100000);
+        int hitung1 = (int)(sisa / 50000);
+        int sisa1 = (int)(nom % 50000);
+        int hitung2 = (int)(sisa1 / 20000);
+        int sisa2 = (int)(nom % 20000);
+        int hitung3 = (int)(sisa2 / 10000);
+        int sisa3 = (int)(nom % 10000);
+        int hitung4 = (int)(sisa3 / 5000);
+        int sisa4 = (int)(nom % 5000);
+        int hitung5 = (int)(sisa4 / 1000);
+        int sisa5 = (int)(nom % 1000);
+        int hitung6 = (int)(sisa5 / 500);
+        int sisa6 = (int)(nom % 500);
+        int hitung7 = (int)(sisa6 / 100);
+        int sisa7 = (int)(nom % 100);
+        
+        if (sisa7 != 0){
+            System.out.println("Tidak Menghitung lebih kecil dari 100");
+        } else {
+            if (hitung != 0){
+                System.out.println(hitung + " X 100k");
+            } else {
+                System.out.print("");
+            }
+            if (hitung1 != 0){
+                System.out.println(hitung1 + " X 50k");
+            } else {
+                System.out.print("");
+            }
+            if (hitung2 != 0){
+                System.out.println(hitung2 + " X 20k");
+            } else {
+                System.out.print("");
+            }
+            if (hitung3 != 0){
+                System.out.println(hitung3 + " X 10k");
+            } else {
+                System.out.print("");
+            }
+            if (hitung4 != 0){
+                System.out.println(hitung4 + " X 5k");
+            } else {
+                System.out.print("");
+            }
+            if (hitung5 != 0){
+                System.out.println(hitung5 + " X 1k");
+            } else {
+                System.out.print("");
+            }
+            if (hitung6 != 0){
+                System.out.println(hitung6 + " X 500");
+            } else {
+                System.out.print("");
+            }
+            if (hitung7 != 0){
+                System.out.println(hitung7 + " X 100");
+            } else {
+                System.out.print("");
+            }
+        }
+    }
+}

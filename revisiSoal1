@@ -1,0 +1,22 @@
+package techtestSERA;
+
+/**
+ *
+ * @author VINCENT
+ */
+import java.util.Scanner;
+public class Soal1 {
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        int[] rp={100000, 50000, 20000, 10000, 5000, 1000, 500, 100};
+        int sisa;
+        System.out.println("Masukkan nominalnya :");
+        int nom = input.nextInt();
+      
+        for(int i=0; i < rp.length; i++){
+          System.out.println(nom/rp[i]+" X "+ rp[i]);
+          sisa=nom%rp[i];
+          nom=sisa;
+        }
+    }
+}
